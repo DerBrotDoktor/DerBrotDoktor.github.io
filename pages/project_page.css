@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.main {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 15px;
+  gap: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: calc(100% - 40px);
+  width: 80em;
+  margin: 0 auto;
+}
+
+.main:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #8ab4c6;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+.project-meta a {
+  display: inline-block;
+}
+
+.project-meta a:hover img {
+  filter: brightness(1.2);
+}
+
+.tech-used {
+  font-size: 0.9em;
+  color: #aaa;
+  margin: 0;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 250px;
+  margin: 10px;
+  align-self: center;
+  object-fit: scale-down;
+}
+
+.project-description {
+  font-size: 0.95em;
+  color: #ccc;
+  margin: 0;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 12px;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.read-more:hover {
+  background: #666;
+}
+
+a {
+  color: #b17cde;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom: 1px dashed #4fc3f7;
+}
+
+h2{
+    margin-bottom: 0;
+    color: #8ab4c6;
+}
+
+p{
+    margin-top: 0
+}
+
+
+@media (max-width: 600px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.screenshot {
+    float: right;
+    width: 350px;
+    margin-top: 5px;
+}
+
+.screenshot-container {
+  float: right;
+  width: 350px;
+  margin: 20px;
+  column-gap: 10px;
+}
+
+.list {
+  margin: 0;
+}
+h3 {
+  margin: 5px;
+  font-weight: normal;
+  font-size: medium;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2a2a2a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 15px;
+
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.navbar a {
+  text-decoration: none;
+  margin: 0 0.8rem;
+  font-weight: 500;
+  color: #c3c3c3;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #007acc;
+}
+
+.navbar-left {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 1rem;
+}

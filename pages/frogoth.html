@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leon Brodel Portfolio</title>
+    <link rel="stylesheet" href="project_page.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <a href="../index.html">Home</a>
+        </div>
+        <div class="navbar-right">
+          <a href="https://github.com/DerBrotDoktor" target="_blank">GitHub</a>
+          <a href="https://colored-pixels.itch.io/" target="_blank">Itch.io</a>
+          <a href="https://www.linkedin.com/in/leon-brodel-7026912a8" target="_blank">LinkedIn</a>
+        </div>
+    </nav>
+    
+    <div class="main">
+        <div class="header">
+            <div>
+                <h1 class="title">Frogoth</h1>
+                <p class="tech-used">Godot · GDScript</p>
+            </div>
+            <div class="project-meta">
+                <span>March 2024</span>
+                <a href="https://s4g.itch.io/frogoth" target="_blank" title="itch.io">Itch.io</a>
+                <a href="https://github.com/DerBrotDoktor/Frogoth" target="_blank" title="GitHub">GitHub</a>
+            </div>
+        </div>
+        
+        <img src="../assets/frogoth/frogoth_banner.png" alt="Frogoth Cover" class="project-image" />
+        
+        <p> 
+            Frogoth is a 2D platformer developed in the Godot Engine during my first semester at the S4G School for Games. 
+            The project focused on player movement and feel, giving me valuable experience with Godot and my first 
+            opportunity to develop a game as part of a team. 
+        </p>
+            
+            <div class="screenshot-container">
+                <img src="../assets/frogoth/screenshot_1.png" alt="Screenshot 1" class="screenshot">
+                <img src="../assets/frogoth/screenshot_2.png" alt="Screenshot 2" class="screenshot">
+                <img src="../assets/frogoth/screenshot_3.png" alt="Screenshot 3" class="screenshot">
+            </div>
+            
+            
+            <h2>About the Game</h2>
+            <p>
+                Frogoth is a 2D Platformer that relies heavily on movement. As a magical frog, you explore a gloomy city full of dangers.
+                You can't attack enemies directly – use your movement to create a shape around the enemies to defeat them.
+                The game features a speedrunning mechanic, challenging levels, and full controller support.
+            </p>
+            
+            <h2>The Project</h2>
+            <p>
+                The project was developed during our first semester at S4G School for Games over the course of 10 weeks by a team of seven people.
+            </p>
+            
+            <h2>Tools</h2>
+            <h3>Development:</h3>
+            <ul class = "list">
+                <li>Godot</li>
+                <li>TortoiseHg (Mercurial)</li>
+            </ul>
+            <h3>Management:</h3>
+            <ul class = "list">
+                <li>Trello</li>
+                <li>Google Workspace</li>
+            </ul>
+            
+            <h2>Responsibilities</h2>
+            <p>
+                As the sole programmer on the team, I was responsible for implementing gameplay mechanics and everything engine-related. 
+                This included learning the Godot engine, programming the game with GDScript, implementing UI and sound,
+                creating some VFX/shaders, and set dressing some levels.
+                I also worked closely with designers to ensure the player movement felt as good as possible
+                and guided them in using the objects and settings I created.
+            </p>
+            
+            <h2>Learnings</h2>
+            <p>
+                Frogoth was my first project with a team. I gained valuable understanding of the
+                Godot engine and what makes 2D platformer movement feel satisfying.
+                One of the most important lessons was working in a team and writing clean,
+                maintainable code that remains understandable weeks later.
+            </p>
+
+            <h2>Highlights</h2>
+            <p>
+                You can view and download the source files <a href="https://github.com/DerBrotDoktor/Frogoth" target="_blank">here</a>.
+                <br><br>
+
+                <b><a href="https://github.com/DerBrotDoktor/Frogoth/blob/main/scenes/player/player.gd" target="_blank">Player Character</a></b><br>
+                Contains all input functions such as walking, jumping, placing orbs, and more.  
+                Includes mechanics to improve player movement feel (e.g., coyote time, squash and stretch).
+                <br><br>
+
+                <b><a href="https://github.com/DerBrotDoktor/Frogoth/blob/main/scenes/kill_shape/kill_shape.gd" target="_blank">Killing Shape</a></b><br>
+                The area the player can create to defeat enemies.
+                <br><br>
+
+                <b><a href="https://github.com/DerBrotDoktor/Frogoth/blob/main/scenes/enemies/enemy_grounded.gd" target="_blank">Enemy</a></b><br>
+                A base enemy class from which other enemies inherit their behavior.  
+                Currently, there are two types of enemies: one with a <a href="https://github.com/DerBrotDoktor/Frogoth/blob/main/scenes/enemies/enemy_single_shot.gd" target="_blank">single shot</a>  
+                and another with a <a href="https://github.com/DerBrotDoktor/Frogoth/blob/main/scenes/enemies/enemy_multiple_shot.gd" target="_blank">scatter shot</a>.
+            </p>
+
+            <h2>Team</h2>
+            <p>
+                The team consisted of seven people: one programmer (me), two designers, and four artists.
+            </p>
+
+            <div>
+                <a href="https://github.com/DerBrotDoktor/Frogoth" target="_blank" class="read-more">Code on GitHub</a>
+                <a href="https://s4g.itch.io/frogoth" target="_blank" class="read-more">Play on Itch.io</a>
+            </div>
+    </div>
+</body>
+</html>
